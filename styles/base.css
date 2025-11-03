@@ -23,7 +23,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #aed112; /* Link color */
+    color: #ededee; /* Link color */
     text-decoration: none; /* Remove underline from links */
 }
 
@@ -75,5 +75,5 @@ h1, h2, h3, h4 {
 }
 
 header, footer {
-    background-color: #f4f3f8; /* Use this as the main color for the header */
+    background-color: #4126ad; /* Use this as the main color for the header */
 }
