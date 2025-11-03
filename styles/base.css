@@ -74,7 +74,6 @@ h1, h2, h3, h4 {
     color: #6c1677; /* Dark color for headings */
 }
 
-footer {
-    color: #fff; /* Ensure footer text is white for contrast */
+header, footer {
+    background-color: #f4f3f8; /* Use this as the main color for the header */
 }
-
