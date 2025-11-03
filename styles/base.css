@@ -23,7 +23,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ededee; /* Link color */
+    color: #fff; /* Link color */
     text-decoration: none; /* Remove underline from links */
 }
 
