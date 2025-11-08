@@ -7,7 +7,7 @@ body {
 
 /* Navigation Styles (Flexbox) */
 nav {
-    background-color: #ec0b0b;
+    background-color: #aaee0c;
     padding: 1em;
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Stack items vertically on mobile */
@@ -15,7 +15,7 @@ nav {
 }
 
 nav a {
-    color: #0d09db; /* Changed from white to dark gray for contrast */
+    color: #0b0b0c; /* Changed from white to dark gray for contrast */
     text-decoration: none;
     padding: 0.5em 1em;
     display: block;
