@@ -1,0 +1,16 @@
+@media (min-width: 768px) { /* Adjust breakpoint as needed */
+    /* Navigation Styles (Flexbox for larger screens) */
+    nav {
+        flex-direction: row; /* Arrange items horizontally on larger screens */
+        justify-content: center; /* Center navigation items */
+    }
+
+    nav a {
+        width: auto; /* Reset width for larger screens */
+    }
+
+    /* Figure Elements (CSS Grid for larger screens) */
+    .figure-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    }
+}

@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles (Flexbox) */
+nav {
+    display: none; /* Initially hide nav on mobile */
+    background-color: #333;
+    padding: 1em;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center items horizontally */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block; /* Make links block-level for better touch targets */
+    width: 100%; /* Full width for mobile links */
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #575757; /* Hover effect */
+}
+
+nav.active {
+    display: flex; /* Show nav when active */
+}
+
+/* Main Content Area */
+main {
+    max-width: 960px; /* Limited width for main content */
+    margin: 20px auto; /* Center horizontally */
+    padding: 0 15px;
+}
+
+/* Figure Elements (CSS Grid - Mobile) */
+.figure-container {
+    display: grid; /* Enable CSS Grid */
+    grid-template-columns: 1fr; /* One column for mobile view */
+    gap: 20px; /* Space between grid items */
+}
+
+.figure-container figure {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.figure-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.figure-container figcaption {
+    font-style: italic;
+    color: #555;
+}
