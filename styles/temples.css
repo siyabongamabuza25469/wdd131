@@ -7,7 +7,6 @@ body {
 
 /* Navigation Styles (Flexbox) */
 nav {
-    display: none; /* Initially hide nav on mobile */
     background-color: #333;
     padding: 1em;
     display: flex; /* Enable Flexbox */
@@ -16,11 +15,11 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #10ad0a; /* Changed from white to dark gray for contrast */
     text-decoration: none;
     padding: 0.5em 1em;
-    display: block; /* Make links block-level for better touch targets */
-    width: 100%; /* Full width for mobile links */
+    display: block;
+    width: 100%;
     text-align: center;
 }
 
