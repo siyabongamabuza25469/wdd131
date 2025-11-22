@@ -1,3 +1,10 @@
+/* Define custom properties using :root */
+:root {
+    --primary-color: #0077cc;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+
 /* Reset some default browser styles */
 * {
     margin: 0;
@@ -8,12 +15,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background: #0077cc;
+    background: var(--primary-color);
     color: white;
     padding: 20px;
     text-align: center;
@@ -48,8 +55,9 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card h2, .card h3 {
-    color: #0077cc;
+.card h2,
+.card h3 {
+    color: var(--primary-color);
 }
 
 .col-2 {
@@ -63,7 +71,7 @@ main {
 }
 
 footer {
-    background: #0077cc;
+    background: var(--primary-color);
     color: white;
     text-align: center;
     padding: 10px;
@@ -71,6 +79,14 @@ footer {
 
 .highlight {
     font-weight: bold;
+}
+
+/* Adding a pseudo-element for footer */
+footer::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    border-top: 1px solid white; /* Example decoration */
 }
 
 /* Mobile View */

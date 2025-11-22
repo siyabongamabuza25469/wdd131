@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploring Pretoria, South Africa</title>
     <meta name="description" content="WDD 131-Dynamic Web Fundamentals: Siyabonga Bafanabakhe Mabuza's overview of HTML, CSS, and JavaScript for dynamic web development.">
+    <meta name="author" content="Siyabonga Bafanabakhe Mabuza">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
@@ -26,8 +27,8 @@
     <aside></aside>
     <main>
         <picture>
-            <source srcset="pexels-jit-roy-2028348030-31037464.svg" media="(min-width: 750px)">
-            <img src="images/pretoria-birds.jpg" alt="South Africa Lenurs - Heroes"width="320" height="480">
+            <source srcset="pexels-jit-roy-2028348030-31037464.svg" type="image/svg+xml" media="(min-width: 750px)">
+            <img src="fallback-image.png" alt="Pretoria CBD">
         </picture>
 
         <section class="card info">
@@ -46,7 +47,7 @@
 
     <section class="card weather">
         <h3>weather</h3>
-        <svg viewBox="0 0 24 24"xmlns="pretoria-_1_.svg" id="weather-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="weather-icon"></svg>
             <g>
                 <path class="cls-1" d="M250,100 C200,100 150,150 150,200 C150,250 200,300 250,300 C300,300 350,250 350,200 C350,150 300,100 250,100 Z" /> <!-- Sun body -->
                 <path class="cls-1" d="M250,50 L250,70 M200,70 L180,50 M300,70 L320,50 M150,100 L130,120 M350,100 L370,120 M100,150 L80,150 M400,150 L420,150 M100,200 L80,220 M400,200 L420,220 M150,250 L130,270 M350,250 L370,270 M200,280 L180,300 M300,280 L320,300 M250,300 L250,320" /> <!-- Sun rays -->
@@ -69,3 +70,5 @@
         <p>&copy; <span id="currentYear"></span> Siyabonga Bafanabakhe Mabuza. Gauteng, South Africa.</p>
         <p class="highlight" id="lastModified"></p>
     </footer>
+    </body>
+</html>
