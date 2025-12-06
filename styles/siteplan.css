@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles (Flexbox) */
+.nav-links {
+    background-color: #aaee0c;
+    padding: 1em;
+    display: block; 
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center items horizontally */
+}
+
+main {
+    max-width: 960px; /* Limits the maximum width of the content area */
+    margin: 20px auto; /* Centers the main content horizontally with vertical spacing */
+    padding: 20px; /* Adds space between the content and the main element's border */
+    background-color: #ffffff; /* Sets a white background for the main content area */
+    border-radius: 8px; /* Rounds the corners of the main content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Sets a common sans-serif font */
+    color: #333; /* Sets a dark gray color for the text */
+    line-height: 1.6; /* Improves readability by increasing line spacing */
+}
