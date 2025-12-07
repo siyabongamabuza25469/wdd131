@@ -33,13 +33,11 @@ body {
         input[type="checkbox"] {
             margin-right: 5px;
         }
-        .radio-group label, .checkbox-group label {
+        .radio-group label,
+        .checkbox-group label {
             display: inline-block;
             margin-right: 15px;
             font-weight: normal;
-        }
-        .radio-group, .checkbox-group {
-            margin-bottom: 15px;
         }
         button {
             background-color: #007bff;
@@ -53,9 +51,14 @@ body {
         button:hover {
             background-color: #0056b3;
         }
-        .error-message {
-            color: red;
-            font-size: 0.9em;
-            margin-top: -10px;
-            margin-bottom: 10px;
+        .form-group {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
         }
