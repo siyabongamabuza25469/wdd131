@@ -3,66 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our amazing products.">
+    <title>Product Review Submission Form</title>
+    <meta name="description" content="Explore our amazing range of products through our user-friendly review form. Share your experiences and insights!">
     <meta name="author" content="Siyabonga Bafanabakhe Mabuza">
-    <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script> 
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
     <header>
-    <h1>Product Review Form</h1>
-    
-    <form method="get" action="review.html">
-        <label for="product">Product Name:</label>
-        <select id="product" name="product" required>
-            <option value="" disabled selected>Select a Product ...</option>
-        </select>
-        <label for="productSelect">Select Product:</label>
-<select id="productSelect" name="product" required>
-    <script>
-        const products = [
-            { name: 'Product A' },
-            { name: 'Product B' },
-            { name: 'Product C' }
-        ];
-
-        products.forEach(product => {
-            document.write(`<option value="${product.name}">${product.name}</option>`);
-        });
-    </script>
-</select>
-</header>
-<main></main>
-<label>Overall Rating:</label>
-<label for="rating">Rating:</label>
-<div class="rating-stars">
-    <fieldset>
-    <input type="radio" id="rating1" name="rating" value="1" required>
-    <label for="rating1" title="1 star">1 Star</label>
-    <input type="radio" id="rating2" name="rating" value="2">
-    <label for="rating2" title="2 stars">2 Stars</label>
-    <input type="radio" id="rating3" name="rating" value="3">
-    <label for="rating3" title="3 stars">3 Stars</label>
-    <input type="radio" id="rating4" name="rating" value="4">
-    <label for="rating4" title="4 stars">4 Stars</label>
-    <input type="radio" id="rating5" name="rating" value="5">
-    <label for="rating5" title="5 stars">5 Stars</label>
-    <label for="installationDate">Date of Installation:</label>
-    <input type="date" id="installationDate" name="installationDate" required>
-    <input type="radio" id="rating5" name="rating" value="5">
-    <label for="rating5" title="5 stars">5 Stars</label>
-    <input type="checkbox" id="feature3" name="features" value="Feature 3">
-    <label for="feature3">Feature 3</label>
-    <label for="review">Written Review:</label>
-    <textarea id="review" name="review"></textarea>
-    <input type="submit" value="Submit Review">
-</fieldset>
-</div>
-</form>
-</main>
-<footer>
-    <p>&copy; <span id="currentYear">2025</span> Siyabonga Bafanabakhe Mabuza. Gauteng, South Africa <span id="lastModified"></span></p> 
-</footer>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                    const products = [
+                        { name: 'Product A' },
+                        { name: 'Product B' },
+                        { name: 'Product C' }
+                    ];
+            products.forEach(product => {
+                document.write(`<option value="${product.name}">${product.name}</option>`); });
+            </select>
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <input type="radio" id="rating1" name="rating" value="1" required>
+                <label for="rating1" title="1 star">1 Star</label>
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2" title="2 stars">2 Stars</label>
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3" title="3 stars">3 Stars</label><br>
+                <input type="radio" id="rating4" name="rating" value="4">
+                <label for="rating4" title="4 stars">4 Stars</label><br>
+                <input type="radio" id="rating5" name="rating" value="5">
+                <label for="rating5" title="5 stars">5 Stars</label><br>
+            </fieldset>
+            <label for="installationDate">Date of Installation:</label><br/>
+            <input type="date" id="installationDate" name="installationDate" required><br/><br/>
+            <label for="features">Features:</label><br/>
+            <input type="checkbox" id="feature1" name="features" value="Feature 1">
+            <label for="feature1">Feature 1</label><br/>
+            <input type="checkbox" id="feature2" name="features" value="Feature 2">
+            <label for="feature2">Feature 2</label><br/>
+            <input type="checkbox" id="feature3" name="features" value="Feature 3">
+            <label for="feature3">Feature 3</label>
+            <input type="checkbox" id="feature4" name="features" value="Feature 4"><br>
+            <label for="feature4">Feature 4</label><br><br>
+            <label for="review">Written Review:</label><br>
+            <textarea id="review" name="review" required></textarea><br><br>
+            <input type="submit" value="Submit Review"><br>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear">2025</span> Siyabonga Bafanabakhe Mabuza. Gauteng, South Africa <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
+
+
+                               

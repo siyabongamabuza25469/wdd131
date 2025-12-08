@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height. */
+    margin: 0; /* Removes default outer spacing. */
+    padding: 0; /* Removes default inner spacing. */
+}
+
+p {
+    margin-bottom: 15px; /* Space below paragraphs. */
+}
+
+nav ul {
+    list-style: none; /* Remove list bullets */
+    display: flex; /* Set ul as a flex container */
+    margin-top: 10px; /* Apply the margin-top here */
+    padding: 0; /* Remove default padding from ul */
+}
+
+nav li {
+    margin: 0 15px; /* Add space between the items */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Sets a common, readable font. */
+    margin: 0; /* Removes default browser margin. */
+    line-height: 1.6; /* Improves readability of text. */
+    color: #333; /* Sets a default text color. */
+    background-color: #f4f4f4; /* Light background for the entire page. */
+}

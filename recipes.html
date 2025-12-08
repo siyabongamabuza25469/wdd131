@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes</title>
+    <link rel="stylesheet" href="styles/healthy-eating.css">
+</head>
+<body>
+    <header>
+        <h1>Delicious Healthy Recipes</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="iindex.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <main>
+    <h2>Popular Recipes</h2>
+    <ul id="recipeList">
+        <!-- Recipe items will be dynamically added here by JavaScript -->
+    </ul>
+    <form id="recipeForm">
+        <label for="newRecipe" class="sr-only">Add your recipe</label>
+        <input type="text" id="newRecipe" placeholder="Add your recipe" required>
+        <button type="submit">Submit</button>
+    </form>
+</main>
+<footer>
+    <p>&copy; <span id="currentyear"></span> Siyabonga Bafanabakhe Mabuza. Gauteng, South Africa <span id="lastmodified"></span></p>
+</footer>
+</body>
+</html>
