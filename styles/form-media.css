@@ -1,0 +1,8 @@
+/* Media Queries */ @media (max-width: 768px) { body { margin: 10px; }
+
+form {
+    padding: 15px;
+}
+
+button { width: 100%; /* This is the highlighted and completed part */ } 
+}
