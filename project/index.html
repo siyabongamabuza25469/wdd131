@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Healthy Eating, our mission, and our commitment to promoting a healthy lifestyle.">
     <title>Healthy Eating</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/healthy-eating.css">
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Welcome to Healthy Eating</h1>
         <nav>
             <ul>
-                <li><a href="iindex.html">Home</a></li>
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="index.html">Learn More</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
-    <section>
-        <h2>Why Healthy Eating?</h2>
-        <p>Discover the benefits of a balanced diet and how it can enhance your well-being!</p>
-        <button id="learnMore">Learn More</button>
-    </section>
-</main>
+        <section>
+            <form id="learnMoreForm">
+                <h2>Why Healthy Eating?</h2>
+                <p>Discover the benefits of a balanced diet and how it can enhance your well-being!</p>
+<form>
+    <select id="learnMoreSelect" name="learnMore" required>
+        <option value="" disabled selected>Learn More ...</option>
+        <option value="fruitsAndVeg">Fruits and Vegetables</option>
+        <option value="starch">Starch</option>
+        <option value="meat">Meat</option>
+        <option value="oils">Oils</option>
+        <option value="vitamins">Vitamins and Minerals</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+<div id="info" style="margin-top: 20px;"></div>
 <footer>
     <p>&copy; <span id="currentyear"></span> Siyabonga Bafanabakhe Mabuza. Gauteng, South Africa <span id="lastmodified"></span></p>
 </footer>
